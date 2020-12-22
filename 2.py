@@ -1,10 +1,11 @@
 import socket, threading
-name = input("Enter you Name: ")
+
 
 
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)     
 client.connect(('192.168.100.3', 12345))   
-DISCONNECT_MESSAGE = "EXIT"                        
+DISCONNECT_MESSAGE = "EXIT"  
+name = input("Enter you Name: ")
 
 def receive():
     while True:                                                
